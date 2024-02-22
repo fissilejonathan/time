@@ -1,4 +1,9 @@
-debug-server:
+debug:
+	@make -j2 run-air &
+	@make -j2 templ-watch &
+	@wait
+
+run-air:
 	air
 
 tailwind:
