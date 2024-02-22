@@ -8,6 +8,8 @@ import (
 func main() {
 	e := echo.New()
 
+	e.Static("/public/css", "css")
+
 	e.GET("/", func(c echo.Context) error {
 		name := "Jonathan Morales"
 
