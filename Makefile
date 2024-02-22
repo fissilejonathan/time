@@ -1,5 +1,5 @@
-run:
-	go run cmd/main.go
+debug-server:
+	air
 
 tailwind:
 	tailwindcss -o css/styles.css --minify
