@@ -2,7 +2,10 @@
 module.exports = {
   content: ["./view/**/*.templ"],
   theme: {
-    extend: {},
+    colors: {
+      'primary': '#f6f5e9',
+      'secondary': '#000000'
+    },
   },
   plugins: [],
 }

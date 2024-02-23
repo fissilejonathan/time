@@ -1,5 +1,7 @@
 package base
 
+import "github.com/fissilejonathan/time/view/layout/base/navbar"
+
 templ Layout() {
 	<!DOCTYPE html>
 	<html>
@@ -8,7 +10,8 @@ templ Layout() {
 			<link rel="stylesheet" href="/public/css/styles.css"/>
 			<link rel="icon" type="image/x-icon" href="/public/favicon.png"/>
 		</head>
-		<body>
+		<body class="bg-primary p-5">
+			@navbar.Layout()
 			{ children... }
 		</body>
 	</html>
