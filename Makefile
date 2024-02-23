@@ -1,19 +1,14 @@
-debug:
-	@make -j2 run-air &
-	@PID1=$$!; \
-	make -j2 templ-watch & \
-	PID2=$$!; \
-	trap 'kill $$PID1 $$PID2' SIGINT; \
-	wait
-
-run-air:
+air:
 	air
 
-tailwind:
-	tailwindcss -o css/styles.css --minify
+tailwind-watch:
+	tailwindcss -o css/styles.css --watch
 
-templ:
-	templ generate
+tailwind-build:
+	tailwindcss -o css/styles.css --minify
 
 templ-watch:
 	templ generate --watch
+
+templ-build:
+	templ generate
