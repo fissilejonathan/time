@@ -2,10 +2,10 @@ air:
 	air
 
 tailwind-watch:
-	tailwindcss -o css/styles.css --watch
+	tailwindcss -o public/css/styles.css --watch
 
 tailwind-build:
-	tailwindcss -o css/styles.css --minify
+	tailwindcss -o public/css/styles.css --minify
 
 templ-watch:
 	templ generate --watch

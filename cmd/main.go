@@ -8,7 +8,7 @@ import (
 func main() {
 	e := echo.New()
 
-	e.Static("/public/css", "css")
+	e.Static("/public", "public")
 
 	e.GET("/", func(c echo.Context) error {
 		name := "Jonathan Morales"

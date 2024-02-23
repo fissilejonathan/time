@@ -1,5 +1,8 @@
+.DS_Store
+
 *_templ.go
 *_templ.txt
-main
-css
+
+public/css
+
 cmd/tmp
